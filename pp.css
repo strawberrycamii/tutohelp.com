@@ -1,0 +1,207 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    word-spacing: 0.2cm;
+    text-transform:uppercase;
+    letter-spacing: 0.8mm; 
+}
+
+.background-container {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/IMG_2027.JPG');
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+}
+ 
+a{
+    text-decoration: none;
+}
+ 
+h1 {
+    font-size: 50px; 
+    text-align: center;
+    color: #ffffff;
+    margin-top: 130px;
+    margin-bottom: 70px;
+    transition: all 0.1s ease;
+}
+h1:hover{
+    color: rgb(155, 96, 96);
+    transform: scale(1.5);
+}
+
+/* pp.css */
+.product-container {
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: space-around;  
+}
+
+.product-card {
+    background-color: #0d0a0684;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 40px;
+    max-width: calc(18% - 40px);  
+}
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all 0.1s ease;
+}
+.product-card img.card-image {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.product-card img.card-image:hover {
+    content: url('img/vanila.jpg');  
+    transform: scale(1.3);  
+}
+
+.product-card img.card-image2:hover {
+    content: url('img/straberry.jpg');  
+    transform: scale(1.3);  
+}
+.product-card img.card-image3:hover {
+    content: url('img/straw.jpg');  
+    transform: scale(1.3);  
+}
+.product-card img.card-image4:hover {
+    content: url('img/orange.jpg');  
+    transform: scale(1.3);  
+}
+.product-card h2 {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 40px;  
+    font-weight:bold;
+}
+
+.product-card p {
+    line-height: 0.8cm;
+    margin-top: 80px;
+    margin: 5px 0;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700; 
+}
+.buy-button{
+    background-color:black ;
+    color: whitesmoke; 
+    border: 0;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 1000;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+.buy-button:hover{
+    transform: scale(0.8); 
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:  #29241cde;
+    color: whitesmoke ;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 100px;
+}
+
+.navbar .name-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .name {
+    font-size: 40px;
+    font-weight: 600;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.navbar .name svg {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 5px; /* Add some margin to separate the icon from text */
+    transition: .5s;
+}
+
+.navbar .name:hover svg {
+    fill: white; /* Change the color as needed */
+    transform: scale(1.2);
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.navbar li {
+    position: relative;
+    
+}
+
+.navbar ul li a {
+    font-weight: 600;
+    font-size: 20px;
+    transition: .5s;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    font-size: 40px;
+}
+
+.navbar ul a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    background-color: white;
+    transition: .5s;
+}
+
+.navbar ul a:hover::after,
+.navbar ul a.active::after {
+    width: 100%;
+}

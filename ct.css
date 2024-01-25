@@ -1,0 +1,59 @@
+ /* Your modified CSS to center text vertically and horizontally */
+ * {
+    font-family: 'Raleway', sans-serif;
+    word-spacing: 0.2cm;
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 0.8mm; 
+    margin: 0;
+    padding: 0;
+}
+
+
+.background-container {
+    background-image: url('img/IMG_2014.JPG');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+}
+
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+    text-align: center;  
+}
+
+.bold-text {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+h4{
+    margin-top: 40px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.spaced-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ 
+.social-icons {
+    margin-top: 40px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: inherit;
+}
